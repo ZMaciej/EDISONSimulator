@@ -1,0 +1,193 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+                    xmlns:s="clr-namespace:DiagramDesigner"
+                    xmlns:c="clr-namespace:DiagramDesigner.Controls"
+                    xmlns:blockTypeConverters="clr-namespace:DiagramDesigner.BlockTypes.BlockTypeConverters"
+                    xmlns:converters="clr-namespace:DiagramDesigner.Converters">
+
+    <ContextMenu x:Key="DesignerItemContextMenu">
+        <MenuItem Header="Cut" Command="{x:Static ApplicationCommands.Cut}">
+            <MenuItem.Icon>
+                <Image Source="Images/Cut.png" Width="16"/>
+            </MenuItem.Icon>
+        </MenuItem>
+        <MenuItem Header="Copy" Command="{x:Static ApplicationCommands.Copy}">
+            <MenuItem.Icon>
+                <Image Source="Images/Copy.png" Width="16"/>
+            </MenuItem.Icon>
+        </MenuItem>
+        <MenuItem Header="Rotate" Command="{Binding Rotate}">
+            <MenuItem.Icon>
+                <Image Source="Images/Redo.png" Width="16"/>
+            </MenuItem.Icon>
+        </MenuItem>
+        <MenuItem Header="Paste" Command="{x:Static ApplicationCommands.Paste}">
+            <MenuItem.Icon>
+                <Image Source="Images/Paste.png" Width="16"/>
+            </MenuItem.Icon>
+        </MenuItem>
+        <MenuItem Header="Delete" Command="{x:Static ApplicationCommands.Delete}">
+            <MenuItem.Icon>
+                <Image Source="Images/Delete.png" Width="16"/>
+            </MenuItem.Icon>
+        </MenuItem>
+    </ContextMenu>
+
+    <blockTypeConverters:BlockTypeToPathStyleConverter x:Key="BlockTypeToPathStyleConverter"/>
+    <blockTypeConverters:BlockTypeToContentPresenterStyleConverter x:Key="BlockTypeToContentPresenterStyleConverter"/>
+    <converters:OrientationToLabelHorizontalAlignmentConverter x:Key="OrientationToLabelHorizontalAlignmentConverter"/>
+    <converters:OrientationToLabelVerticalAlignmentConverter x:Key="OrientationToLabelVerticalAlignmentConverter"/>
+    <converters:PortNumberToLabelMarginConverter x:Key="PortNumberToLabelMarginConverter"/>
+
+    <!-- Connector Style -->
+    <Style TargetType="{x:Type s:Connector}">
+        <Setter Property="Width" Value="8"/>
+        <Setter Property="Height" Value="8"/>
+        <Setter Property="Cursor" Value="Cross"/>
+        <Setter Property="SnapsToDevicePixels" Value="true"/>
+        <Setter Property="c:RelativePositionPanel.RelativePosition" Value="{Binding RelativeSource={RelativeSource Self}, Path=ViewModel.Position}"/>
+        <Setter Property="Orientation" Value="{Binding RelativeSource={RelativeSource Self}, Path=ViewModel.Orientation}"/>
+        <Setter Property="ID" Value="{Binding RelativeSource={RelativeSource Self}, Path=ViewModel.ID}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type s:Connector}">
+                    <Grid>
+                        <!-- transparent extra space makes connector easier to hit -->
+                        <Rectangle Fill="Transparent" Margin="-2"/>
+                        <Rectangle x:Name="Rectangle" Fill="Lavender" StrokeThickness="1" Stroke="#AA000080"/>
+                        <TextBlock Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=s:Connector}, Path=ViewModel.Number}"
+                                   VerticalAlignment="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=s:Connector}, Path=ViewModel.Orientation, Converter={StaticResource OrientationToLabelVerticalAlignmentConverter}, Mode=OneWay}" 
+                                   HorizontalAlignment="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=s:Connector}, Path=ViewModel.Orientation, Converter={StaticResource OrientationToLabelHorizontalAlignmentConverter}, Mode=OneWay}"
+                                   FontSize="10"
+                                   IsHitTestVisible="False">
+                            <TextBlock.Margin>
+                                <MultiBinding Converter="{StaticResource PortNumberToLabelMarginConverter}">
+                                    <Binding RelativeSource="{RelativeSource Mode=FindAncestor, AncestorType=s:Connector}" Path="ViewModel.Number" Mode="OneWay"/>
+                                    <Binding RelativeSource="{RelativeSource Mode=FindAncestor, AncestorType=s:Connector}" Path="ViewModel.Orientation" Mode="OneWay"/>
+                                </MultiBinding>
+                            </TextBlock.Margin>
+                        </TextBlock>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self},Path=ViewModel.Connected}" Value="true">
+                            <Setter TargetName="Rectangle" Property="Fill" Value="#A6A6BA"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- ConnectorDecoratorTemplate Template -->
+    <ControlTemplate x:Key="ConnectorDecoratorTemplate" TargetType="{x:Type Control}">
+        <c:RelativePositionPanel Margin="-4"/>
+    </ControlTemplate>
+
+    <!--Resize corner style-->
+    <ControlTemplate x:Key="ResizeCornerTemplate" TargetType="{x:Type c:ResizeThumb}">
+        <Grid>
+            <!-- transparent extra space to easier hit -->
+            <Rectangle Fill="Transparent" Margin="-2"/>
+            <Rectangle Stroke="Black" StrokeThickness="1" Fill="#eef"/>
+        </Grid>
+    </ControlTemplate>
+    <Style x:Key="ResizeBarStyle" TargetType="{x:Type Rectangle}">
+        <Setter Property="Fill"
+              Value="Black" />
+    </Style>
+
+    <!-- ResizeDecorator Default Template -->
+    <ControlTemplate x:Key="ResizeDecoratorTemplate" TargetType="{x:Type Control}">
+        <Grid Opacity="0.5" SnapsToDevicePixels="true">
+            <Rectangle Width="1" VerticalAlignment="Stretch" HorizontalAlignment="Left" Margin="-4 0 0 0" Style="{StaticResource ResizeBarStyle}"/>
+            <Rectangle Height="1" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="0 -4 0 0" Style="{StaticResource ResizeBarStyle}"/>
+            <Rectangle Width="1" VerticalAlignment="Stretch" HorizontalAlignment="Right" Margin="0 0 -4 0" Style="{StaticResource ResizeBarStyle}"/>
+            <Rectangle Height="1" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Margin="0 0 0 -4" Style="{StaticResource ResizeBarStyle}"/>
+            <c:ResizeThumb Width="6" Height="6" Cursor="SizeNWSE" Margin="-6 -6 0 0"
+                            VerticalAlignment="Top" HorizontalAlignment="Left" Template="{StaticResource ResizeCornerTemplate}"/>
+            <c:ResizeThumb Width="6" Height="6" Cursor="SizeNESW" Margin="0 -6 -6 0"
+                            VerticalAlignment="Top" HorizontalAlignment="Right" Template="{StaticResource ResizeCornerTemplate}"/>
+            <c:ResizeThumb Width="6" Height="6" Cursor="SizeNESW" Margin="-6 0 0 -6"
+                            VerticalAlignment="Bottom" HorizontalAlignment="Left" Template="{StaticResource ResizeCornerTemplate}"/>
+            <c:ResizeThumb Width="6" Height="6" Cursor="SizeNWSE" Margin="0 0 -6 -6"
+                            VerticalAlignment="Bottom" HorizontalAlignment="Right" Template="{StaticResource ResizeCornerTemplate}"/>
+        </Grid>
+    </ControlTemplate>
+
+    <!-- DragThumb Default Template -->
+    <Style TargetType="{x:Type c:DragThumb}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type c:DragThumb}">
+                    <Path Style="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type s:DesignerItem}}, Path=DataContext.Type, Converter={StaticResource BlockTypeToPathStyleConverter}}" Fill="Transparent" IsHitTestVisible="True" Stroke="Transparent"/>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- Description Style -->
+    <ControlTemplate x:Key="Description" TargetType="{x:Type Control}">
+        <TextBox Margin="0 5 0 0" Text="{Binding Name}" VerticalAlignment="Bottom" HorizontalAlignment="Center" MinWidth="15" BorderBrush="Transparent" Background="Transparent"/>
+    </ControlTemplate>
+
+    <!-- DesignerItem Style -->
+    <Style TargetType="s:DesignerItem">
+        <Setter Property="MinWidth" Value="20"/>
+        <Setter Property="MinHeight" Value="20"/>
+        <Setter Property="SnapsToDevicePixels" Value="True"/>
+        <Setter Property="Canvas.Left" Value="{Binding LeftOnCanvas, Mode=TwoWay}"/>
+        <Setter Property="Canvas.Top" Value="{Binding Top, Mode=TwoWay}"/>
+        <Setter Property="CanvasWidth" Value="{Binding WidthOnCanvas, Mode=OneWayToSource}"/>
+        <Setter Property="Connectors" Value="{Binding ConnectorsVM}"/>
+        <Setter Property="ID" Value="{Binding ID}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type s:DesignerItem}">
+                    <StackPanel DataContext="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type s:DesignerItem}}, Path=DataContext}">
+                        <Grid ContextMenu="{StaticResource DesignerItemContextMenu}" Width="{Binding Width, Mode=TwoWay}" Height="{Binding Height, Mode=TwoWay}">
+
+                            <!-- transparent extra space to easier trigger -->
+                            <Rectangle Fill="Transparent" Margin="-4"/>
+                            <Path x:Name="PART_SelectionMarker" Margin="-5" 
+                              Fill="DodgerBlue" Opacity="0.3" Visibility="Hidden" Stroke="DodgerBlue"
+                              Style="{Binding Type, Converter={StaticResource BlockTypeToPathStyleConverter}}"/>
+                            <!-- PART_ContentPresenter -->
+                            <ContentPresenter x:Name="PART_ContentPresenter"
+                                          HorizontalAlignment="Stretch"
+                                          VerticalAlignment="Stretch"
+                                          Content="{Binding}"
+                                          Style="{Binding Type, Converter={StaticResource BlockTypeToContentPresenterStyleConverter}}">
+                            </ContentPresenter>
+                            
+                            <Grid DataContext="{Binding RelativeSource={RelativeSource TemplatedParent}}">
+                                <!-- PART_DragThumb -->
+                                <c:DragThumb x:Name="PART_DragThumb"/>
+                                <!-- PART_ResizeDecorator -->
+                                <Control x:Name="PART_ResizeDecorator"
+                                     Visibility="Collapsed"
+                                     Template="{StaticResource ResizeDecoratorTemplate}"/>
+                                <!-- PART_ConnectorDecorator -->
+                                <Control x:Name="PART_ConnectorDecorator" Template="{StaticResource ConnectorDecoratorTemplate}"/>
+                            </Grid>
+
+                        </Grid>
+                        <!-- PART_Description -->
+                        <Control x:Name="PART_Description"
+                                 Template="{StaticResource Description}"/>
+
+                    </StackPanel>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter TargetName="PART_ResizeDecorator" Property="Visibility" Value="Visible"/>
+                        </Trigger>
+                        <DataTrigger Value="True" Binding="{Binding RelativeSource={RelativeSource Self},Path=IsSelected}">
+                            <Setter TargetName="PART_SelectionMarker" Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,168 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:s="clr-namespace:DiagramDesigner"
+                    xmlns:c="clr-namespace:DiagramDesigner.Controls">
+
+    <s:Toolbox x:Key="LumpedComponents" ItemSize="50,40" SnapsToDevicePixels="True"
+             ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+        <ItemsControl.Items>
+
+            <s:ToolboxItem Type="ResistorInSeries">
+                <StackPanel  ToolTip="Resistor In Series">
+                    <Grid>
+                        <!--Empty columns are created to prevent a textBlock dependent layout-->
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Path Grid.Column="1" Style="{StaticResource ResistorInSeriesPath}"/>
+                        <Grid Grid.Column="1" Margin="-2" IsHitTestVisible="False">
+                            <Grid HorizontalAlignment="Left" VerticalAlignment="Center">
+                                <Rectangle Style="{StaticResource ConnectorStyle}" />
+                                <TextBlock Text="1" Style="{StaticResource TextBlockConnectorCountStyle}"/>
+                            </Grid>
+                            <Grid HorizontalAlignment="Right" VerticalAlignment="Center">
+                                <Rectangle Style="{StaticResource ConnectorStyle}" />
+                                <TextBlock Text="1" Style="{StaticResource TextBlockConnectorCountStyle}"/>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <TextBlock Text="Resistor In Series" Style="{StaticResource ToolBoxItemSignature}"/>
+                </StackPanel>
+            </s:ToolboxItem>
+
+            <s:ToolboxItem Type="ResistorInParallel">
+                <StackPanel  ToolTip="Resistor In Parallel">
+                    <Grid>
+                        <!--Empty columns are created to prevent a textBlock dependent layout-->
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Path Grid.Column="1" Style="{StaticResource ResistorInParallelPath}"/>
+                        <Grid Grid.Column="1" Margin="-2" IsHitTestVisible="False">
+                            <Grid HorizontalAlignment="Left" VerticalAlignment="Center">
+                                <Rectangle Style="{StaticResource ConnectorStyle}" />
+                                <TextBlock Text="1" Style="{StaticResource TextBlockConnectorCountStyle}"/>
+                            </Grid>
+                            <Grid HorizontalAlignment="Right" VerticalAlignment="Center">
+                                <Rectangle Style="{StaticResource ConnectorStyle}" />
+                                <TextBlock Text="1" Style="{StaticResource TextBlockConnectorCountStyle}"/>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <TextBlock Text="Resistor In Parallel" Style="{StaticResource ToolBoxItemSignature}"/>
+                </StackPanel>
+            </s:ToolboxItem>
+
+            <s:ToolboxItem Type="CapacitorInSeries">
+                <StackPanel  ToolTip="Capacitor In Series">
+                    <Grid>
+                        <!--Empty columns are created to prevent a textBlock dependent layout-->
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Path Grid.Column="1" Style="{StaticResource CapacitorInSeriesPath}"/>
+                        <Grid Grid.Column="1" Margin="-2" IsHitTestVisible="False">
+                            <Grid HorizontalAlignment="Left" VerticalAlignment="Center">
+                                <Rectangle Style="{StaticResource ConnectorStyle}" />
+                                <TextBlock Text="1" Style="{StaticResource TextBlockConnectorCountStyle}"/>
+                            </Grid>
+                            <Grid HorizontalAlignment="Right" VerticalAlignment="Center">
+                                <Rectangle Style="{StaticResource ConnectorStyle}" />
+                                <TextBlock Text="1" Style="{StaticResource TextBlockConnectorCountStyle}"/>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <TextBlock Text="Capacitor In Series" Style="{StaticResource ToolBoxItemSignature}"/>
+                </StackPanel>
+            </s:ToolboxItem>
+
+            <s:ToolboxItem Type="CapacitorInParallel">
+                <StackPanel  ToolTip="Capacitor In Parallel">
+                    <Grid>
+                        <!--Empty columns are created to prevent a textBlock dependent layout-->
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Path Grid.Column="1" Style="{StaticResource CapacitorInParallelPath}"/>
+                        <Grid Grid.Column="1" Margin="-2" IsHitTestVisible="False">
+                            <Grid HorizontalAlignment="Left" VerticalAlignment="Center">
+                                <Rectangle Style="{StaticResource ConnectorStyle}" />
+                                <TextBlock Text="1" Style="{StaticResource TextBlockConnectorCountStyle}"/>
+                            </Grid>
+                            <Grid HorizontalAlignment="Right" VerticalAlignment="Center">
+                                <Rectangle Style="{StaticResource ConnectorStyle}" />
+                                <TextBlock Text="1" Style="{StaticResource TextBlockConnectorCountStyle}"/>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <TextBlock Text="Capacitor In Parallel" Style="{StaticResource ToolBoxItemSignature}"/>
+                </StackPanel>
+            </s:ToolboxItem>
+
+            <s:ToolboxItem Type="InductorInSeries">
+                <StackPanel  ToolTip="Inductor In Series">
+                    <Grid>
+                        <!--Empty columns are created to prevent a textBlock dependent layout-->
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Path Grid.Column="1" Style="{StaticResource InductorInSeriesPath}"/>
+                        <Grid Grid.Column="1" Margin="-2" IsHitTestVisible="False">
+                            <Grid HorizontalAlignment="Left" VerticalAlignment="Center">
+                                <Rectangle Style="{StaticResource ConnectorStyle}" />
+                                <TextBlock Text="1" Style="{StaticResource TextBlockConnectorCountStyle}"/>
+                            </Grid>
+                            <Grid HorizontalAlignment="Right" VerticalAlignment="Center">
+                                <Rectangle Style="{StaticResource ConnectorStyle}" />
+                                <TextBlock Text="1" Style="{StaticResource TextBlockConnectorCountStyle}"/>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <TextBlock Text="Inductor In Series" Style="{StaticResource ToolBoxItemSignature}"/>
+                </StackPanel>
+            </s:ToolboxItem>
+
+            <s:ToolboxItem Type="InductorInParallel">
+                <StackPanel  ToolTip="Inductor In Parallel">
+                    <Grid>
+                        <!--Empty columns are created to prevent a textBlock dependent layout-->
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Path Grid.Column="1" Style="{StaticResource InductorInParallelPath}"/>
+                        <Grid Grid.Column="1" Margin="-2" IsHitTestVisible="False">
+                            <Grid HorizontalAlignment="Left" VerticalAlignment="Center">
+                                <Rectangle Style="{StaticResource ConnectorStyle}" />
+                                <TextBlock Text="1" Style="{StaticResource TextBlockConnectorCountStyle}"/>
+                            </Grid>
+                            <Grid HorizontalAlignment="Right" VerticalAlignment="Center">
+                                <Rectangle Style="{StaticResource ConnectorStyle}" />
+                                <TextBlock Text="1" Style="{StaticResource TextBlockConnectorCountStyle}"/>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <TextBlock Text="Inductor In Parallel" Style="{StaticResource ToolBoxItemSignature}"/>
+                </StackPanel>
+            </s:ToolboxItem>
+
+        </ItemsControl.Items>
+    </s:Toolbox>
+</ResourceDictionary>

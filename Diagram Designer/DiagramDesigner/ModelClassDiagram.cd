@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DiagramDesigner.Model.Element">
+    <Position X="4.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>BIBCKAAAAAAggIQwAABAAAYCAABISAIQAQAAggKAAAA=</HashCode>
+      <FileName>Model\Element.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DiagramDesigner.Model.ConnectionModel">
+    <Position X="9" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAIAAhAAAACAARAAAAAAAAAggAAAAA=</HashCode>
+      <FileName>Model\ConnectionModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DiagramDesigner.Model.ConnectorModel">
+    <Position X="7" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAA4AAgAEBAwAAQAAAAAAAAAAAggABAAAA=</HashCode>
+      <FileName>Model\ConnectorModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiagramDesigner.Model.MainModel">
+    <Position X="0.5" Y="0.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AABJoIFoAABJoAALABgZGAUAAAgCAIwAMIQ4ADAxABA=</HashCode>
+      <FileName>Model\MainModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

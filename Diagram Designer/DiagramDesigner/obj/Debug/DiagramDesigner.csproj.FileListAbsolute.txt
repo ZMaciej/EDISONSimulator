@@ -1,0 +1,94 @@
+C:\Users\Maciej\Documents\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\bin\Debug\DiagramDesigner.exe
+C:\Users\Maciej\Documents\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\bin\Debug\DiagramDesigner.pdb
+C:\Users\Maciej\Documents\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\DiagramDesigner.csprojAssemblyReference.cache
+C:\Users\Maciej\Documents\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\Resources\Styles\Shared.baml
+C:\Users\Maciej\Documents\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\Resources\Styles\ToolBar.baml
+C:\Users\Maciej\Documents\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\App.baml
+C:\Users\Maciej\Documents\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\MainWindow.g.cs
+C:\Users\Maciej\Documents\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\App.g.cs
+C:\Users\Maciej\Documents\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Maciej\Documents\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\DiagramDesigner_MarkupCompile.cache
+C:\Users\Maciej\Documents\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\DiagramDesigner_MarkupCompile.lref
+C:\Users\Maciej\Documents\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\Resources\Connection.baml
+C:\Users\Maciej\Documents\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\Resources\DesignerItem.baml
+C:\Users\Maciej\Documents\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\Resources\Stencils\BlockStyles.baml
+C:\Users\Maciej\Documents\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\Resources\Stencils\BlockStencils2.baml
+C:\Users\Maciej\Documents\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\Resources\Stencils\BlockStencils1.baml
+C:\Users\Maciej\Documents\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\Resources\Toolbox.baml
+C:\Users\Maciej\Documents\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\Resources\ToolboxItem.baml
+C:\Users\Maciej\Documents\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\MainWindow.baml
+C:\Users\Maciej\Documents\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\DiagramDesigner.g.resources
+C:\Users\Maciej\Documents\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\DiagramDesigner.Properties.Resources.resources
+C:\Users\Maciej\Documents\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\DiagramDesigner.csproj.GenerateResource.cache
+C:\Users\Maciej\Documents\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\DiagramDesigner.csproj.CoreCompileInputs.cache
+C:\Users\Maciej\Documents\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\DiagramDesigner.exe
+C:\Users\Maciej\Documents\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\DiagramDesigner.pdb
+C:\Users\Maciej\Documents\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\bin\Debug\DiagramDesigner.exe.config
+C:\Users\Maciej\Documents\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\Resources\Stencils\StencilsStyle.baml
+C:\Users\Maciej\Documents\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\Resources\MenuBar.baml
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\bin\Debug\DiagramDesigner.exe.config
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\bin\Debug\DiagramDesigner.exe
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\bin\Debug\DiagramDesigner.pdb
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\DiagramDesigner.csprojAssemblyReference.cache
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\Resources\Styles\Shared.baml
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\Resources\Styles\ToolBar.baml
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\App.baml
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\MainWindow.g.cs
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\App.g.cs
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\DiagramDesigner_MarkupCompile.cache
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\DiagramDesigner_MarkupCompile.lref
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\Resources\MenuBar.baml
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\Resources\Connection.baml
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\Resources\DesignerItem.baml
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\Resources\Stencils\BlockStyles.baml
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\Resources\Stencils\BlockStencils1.baml
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\Resources\Stencils\StencilsStyle.baml
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\Resources\Toolbox.baml
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\Resources\ToolboxItem.baml
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\MainWindow.baml
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\DiagramDesigner.g.resources
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\DiagramDesigner.Properties.Resources.resources
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\DiagramDesigner.csproj.GenerateResource.cache
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\DiagramDesigner.csproj.CoreCompileInputs.cache
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\DiagramDesigner.exe
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\DiagramDesigner.pdb
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\bin\Debug\Xceed.Wpf.AvalonDock.dll
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\bin\Debug\Xceed.Wpf.Toolkit.dll
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\DiagramDesigner.csproj.CopyComplete
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\BlockTypes\BlockStyles.baml
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\bin\Debug\MathNet.Numerics.dll
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\bin\Debug\MathNet.Numerics.xml
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\BlockTypes\Port\PortStyles.baml
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\Resources\Stencils\Ports.baml
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\bin\Debug\OxyPlot.dll
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\bin\Debug\OxyPlot.Wpf.dll
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\bin\Debug\OxyPlot.pdb
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\bin\Debug\OxyPlot.xml
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\bin\Debug\OxyPlot.Wpf.pdb
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\bin\Debug\OxyPlot.Wpf.xml
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\BlockTypes\TransmissionLine\TransmissionLineStyles.baml
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\BlockTypes\LumpedComponents\CapacitorInParallel\CapacitorInParallelStyles.baml
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\BlockTypes\LumpedComponents\CapacitorInSeries\CapacitorInSeriesStyles.baml
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\BlockTypes\LumpedComponents\InductorInParallel\InductorInParallelStyles.baml
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\BlockTypes\LumpedComponents\InductorInSeries\InductorInSeriesStyles.baml
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\BlockTypes\LumpedComponents\ResistorInParallel\ResistorInParallelStyles.baml
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\BlockTypes\LumpedComponents\ResistorInSeries\ResistorInSeriesStyles.baml
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\Resources\Stencils\LumpedComponents.baml
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\BlockTypes\OpenCircuit\OpenCircuitStyles.baml
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\BlockTypes\ShortCircuit\ShortCircuitStyles.baml
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\Resources\Stencils\TransmissionLines.baml
+E:\Moje dokumenty\GitHub\Edison-Simulator\Diagram Designer\DiagramDesigner\obj\Debug\BlockTypes\ImportedComponent\ImportedComponentStyles.baml

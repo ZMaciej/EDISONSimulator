@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DiagramDesigner.ViewModel.MainVM">
+    <Position X="0.5" Y="1.25" Width="3.5" />
+    <NestedTypes>
+      <Enum Name="DiagramDesigner.ViewModel.MainVM.Direction" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ViewModel\MainVM.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAApoMFCABgJcQACJAgRDAQAGAgCAYoAIBR4ICCBlAI=</HashCode>
+      <FileName>ViewModel\MainVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiagramDesigner.ViewModel.ElementVM">
+    <Position X="4.25" Y="1.25" Width="3" />
+    <NestedTypes>
+      <Delegate Name="DiagramDesigner.ViewModel.ElementVM.MyDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ViewModel\ElementVM.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AEREAAAABAQBgIIgKAhoAEQAMAAMAAAACVAAIgAAUgA=</HashCode>
+      <FileName>ViewModel\ElementVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiagramDesigner.ViewModel.ConnectorVM">
+    <Position X="7.5" Y="1.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQiAwAIgCEAAQAAAAAAAAQAAEAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\ConnectorVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiagramDesigner.ViewModel.ConnectionVM">
+    <Position X="10.5" Y="1.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAgAIQQASABAAAAAABAAAAAAAAAAAQABA=</HashCode>
+      <FileName>ViewModel\ConnectionVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

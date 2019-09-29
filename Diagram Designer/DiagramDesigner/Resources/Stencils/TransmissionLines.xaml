@@ -1,0 +1,38 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:s="clr-namespace:DiagramDesigner"
+                    xmlns:c="clr-namespace:DiagramDesigner.Controls">
+
+    <s:Toolbox x:Key="TransmissionLines" ItemSize="50,40" SnapsToDevicePixels="True"
+             ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+        <ItemsControl.Items>
+
+            <s:ToolboxItem Type="TransmissionLine">
+                <StackPanel  ToolTip="Transmission Line">
+                    <Grid>
+                        <!--Empty columns are created to prevent a textBlock dependent layout-->
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Path Grid.Column="1" Style="{StaticResource TransmissionLinePath}"/>
+                        <Grid Grid.Column="1" Margin="-2" IsHitTestVisible="False">
+                            <Grid HorizontalAlignment="Left" VerticalAlignment="Center">
+                                <Rectangle Style="{StaticResource ConnectorStyle}" />
+                                <TextBlock Text="1" Style="{StaticResource TextBlockConnectorCountStyle}"/>
+                            </Grid>
+                            <Grid HorizontalAlignment="Right" VerticalAlignment="Center">
+                                <Rectangle Style="{StaticResource ConnectorStyle}" />
+                                <TextBlock Text="1" Style="{StaticResource TextBlockConnectorCountStyle}"/>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <TextBlock Text="Line" Style="{StaticResource ToolBoxItemSignature}"/>
+                </StackPanel>
+            </s:ToolboxItem>
+
+        </ItemsControl.Items>
+    </s:Toolbox>
+</ResourceDictionary>

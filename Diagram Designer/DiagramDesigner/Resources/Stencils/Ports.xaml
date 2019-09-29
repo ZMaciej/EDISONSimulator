@@ -1,0 +1,81 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:s="clr-namespace:DiagramDesigner"
+                    xmlns:c="clr-namespace:DiagramDesigner.Controls">
+
+    <Style TargetType="Rectangle" x:Key="ConnectorStyle">
+        <Setter Property="Fill" Value="Lavender"/>
+        <Setter Property="Stroke" Value="#AA000080"/>
+        <Setter Property="StrokeThickness" Value="1"/>
+    </Style>
+
+    <Style TargetType="TextBlock" x:Key="TextBlockConnectorCountStyle">
+        <Setter Property="Margin" Value="2 0"/>
+    </Style>
+
+    <s:Toolbox x:Key="Ports" ItemSize="50,40" SnapsToDevicePixels="True"
+             ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+        <ItemsControl.Items>
+
+            <s:ToolboxItem Type="Port">
+                <StackPanel  ToolTip="Port">
+                    <Grid>
+                        <Path Style="{StaticResource PortPath}"/>
+                        <Grid Margin="-2" IsHitTestVisible="False">
+                            <Grid HorizontalAlignment="Right" VerticalAlignment="Center">
+                                <Rectangle Style="{StaticResource ConnectorStyle}" />
+                                <TextBlock Text="1" Style="{StaticResource TextBlockConnectorCountStyle}"/>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <TextBlock Text="Port" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </s:ToolboxItem>
+
+            <s:ToolboxItem Type="OpenCircuit">
+                <StackPanel  ToolTip="Open Circuit">
+                    <Grid>
+                        <!--Empty columns are created to prevent a textBlock dependent layout-->
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Path Grid.Column="1" Style="{StaticResource OpenCircuitPath}"/>
+                        <Grid Grid.Column="1" Margin="-2" IsHitTestVisible="False">
+                            <Grid HorizontalAlignment="Left" VerticalAlignment="Center">
+                                <Rectangle Style="{StaticResource ConnectorStyle}" />
+                                <TextBlock Text="1" Style="{StaticResource TextBlockConnectorCountStyle}"/>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <TextBlock Text="Open Circuit" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </s:ToolboxItem>
+
+            <s:ToolboxItem Type="ShortCircuit">
+                <StackPanel  ToolTip="Short Circuit">
+                    <Grid>
+                        <!--Empty columns are created to prevent a textBlock dependent layout-->
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Path Grid.Column="1" Style="{StaticResource ShortCircuitPath}"/>
+                        <Grid Grid.Column="1" Margin="-2" IsHitTestVisible="False">
+                            <Grid HorizontalAlignment="Left" VerticalAlignment="Center">
+                                <Rectangle Style="{StaticResource ConnectorStyle}" />
+                                <TextBlock Text="1" Style="{StaticResource TextBlockConnectorCountStyle}"/>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <TextBlock Text="Short Circuit" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </s:ToolboxItem>
+
+        </ItemsControl.Items>
+    </s:Toolbox>
+</ResourceDictionary>

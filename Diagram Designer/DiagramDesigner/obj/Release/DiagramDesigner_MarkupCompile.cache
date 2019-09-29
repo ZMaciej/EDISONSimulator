@@ -1,0 +1,20 @@
+﻿DiagramDesigner
+
+
+winexe
+C#
+.cs
+E:\Moje dokumenty\GitHub\EdisonSimulator\Diagram Designer\DiagramDesigner\obj\Release\
+DiagramDesigner
+none
+false
+TRACE
+E:\Moje dokumenty\GitHub\EdisonSimulator\Diagram Designer\DiagramDesigner\App.xaml
+25328228573
+
+76-2109461582
+74-2126725237
+BlockTypes\BlockStyles.xaml;BlockTypes\ImportedComponent\ImportedComponentStyles.xaml;BlockTypes\LumpedComponents\CapacitorInParallel\CapacitorInParallelStyles.xaml;BlockTypes\LumpedComponents\CapacitorInSeries\CapacitorInSeriesStyles.xaml;BlockTypes\LumpedComponents\InductorInParallel\InductorInParallelStyles.xaml;BlockTypes\LumpedComponents\InductorInSeries\InductorInSeriesStyles.xaml;BlockTypes\LumpedComponents\ResistorInParallel\ResistorInParallelStyles.xaml;BlockTypes\LumpedComponents\ResistorInSeries\ResistorInSeriesStyles.xaml;BlockTypes\OpenCircuit\OpenCircuitStyles.xaml;BlockTypes\Port\PortStyles.xaml;BlockTypes\ShortCircuit\ShortCircuitStyles.xaml;BlockTypes\TransmissionLine\TransmissionLineStyles.xaml;Resources\MenuBar.xaml;Resources\Connection.xaml;Resources\DesignerItem.xaml;Resources\Stencils\TransmissionLines.xaml;Resources\Stencils\Ports.xaml;Resources\Stencils\LumpedComponents.xaml;Resources\Stencils\BlockStyles.xaml;Resources\Stencils\StencilsStyle.xaml;Resources\Styles\Shared.xaml;Resources\Styles\ToolBar.xaml;Resources\Toolbox.xaml;Resources\ToolboxItem.xaml;MainWindow.xaml;
+
+False
+
